@@ -1,0 +1,75 @@
+define empty global_list = []
+
+function importlist()
+    list = []
+    list = open('screws.txt')
+    for row in myfile:
+        screw_list.append(row)
+    return screw_list
+
+assign global_list = screw_list()
+    
+function stockValue
+    units100 = item4 * 0.9 * 2   //ACCOUNT FOR BULK DISKCOUNTS AND 50BOX AS 1UOS
+    units200 = item5 * 0.85 * 4  
+    valueStock = (item3 + units100 + units200) * item6
+    return valueStock
+
+function basicFeatures1(list)
+    print "Screw types available: "
+    for item in list
+        unitsOfStock = item3 + item4*2 + item5*4
+        stockValue = item3
+        name = item0, item1, item3
+        print (name) has (unitsOfStock) units of stock and total stock value of (stockValue)
+
+function basicFeatures2(list)
+    totalunits = 0
+    for item in list: 
+        for each screw in item2
+            unitsOfStock = item3 + item4*2 + item5*4
+            totalunits += unitsOfStock
+    print("__mmm screws have", totalunits, "units of stock") //print total units for each screw
+
+
+function advancedFeatures3
+    screwLength = input("Please enter a length category to search (20mm, 40mm, 60mm): ")
+    print("Screws available for", screwLength)
+    for item in l:
+        if item2 = screwLength:
+            print item0, item1
+            unitsOfStock = item3 + item4*2 + item5*4
+            stockV = stockVal(item) //use previous function
+            print("This screw has (units) units of stock and stock value of (stockV)")    
+
+function advancedFeatures4
+    See FlowChart 
+
+
+function advancedFeatures5(list) 
+    make empty new_list = []
+    for item in list
+        unitsOfStock = item3 + item4*2 + item5*4
+        append new_list(unitsOfStock)
+    maxIndex = max index of new_list
+    print(list[maxIndex][0,1,2])        //print name of screw with highest stock
+    userinput = ("Do you want to add 10% discount on this screw?")
+    if userinput = "yes"
+        for item in list
+            if item7 = yes
+                userinput2 = ("There is a sale running, do you want to continue?")
+                if userinput2 = "yes"
+                    previousSale = list(index) //index of item with sale
+                    update global_list[previousSale][7] = "no"  //remove old sale
+                    update global_list[maxIndex][7] = "yes"     //add new sale
+                else
+                    quit program
+    else 
+        quit program
+
+function barChart(a,b,c)
+    import 3 values from function2 = [a,b,c]
+    title('Units of Stock in by Length')
+    y label('Units of Stock')
+    x label('Length')
+    lengths=['20mm','40mm','60mm']
