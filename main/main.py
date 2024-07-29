@@ -14,6 +14,7 @@ globalList = importList()
 def printN(item): #return names
   return item[0], item[1], item[2]
     
+    
       # name = printN(item)
       # name = (f"{name[0]} {name[1]} {name[2]}")
 
